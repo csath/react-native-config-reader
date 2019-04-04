@@ -55,6 +55,8 @@ RNConfigReader.;
 
 
 ## License
-MIT © Chanaka Athurugiriya 2019
+MIT License
+
+Copyright (c) 2019 Chanaka Athurugiriya
 
   
