@@ -1,13 +1,24 @@
 
-# react-native-config-reader
+# 🛠 react-native-config-reader
 
-## Getting started
+react-native-config-reader is a native library which make it easy to access all the native code's build configurations from JS.
 
-`$ npm install react-native-config-reader --save`
+## Installation
 
-### Mostly automatic installation
+1. `$ npm install react-native-config-reader --save` or  `$ yarn add react-native-config-reader`
 
-`$ react-native link react-native-config-reader`
+2. `$ react-native link react-native-config-reader`
+
+
+See [manual installation](#manual-installation) below if you have issues with `react-native link`.
+
+## Usage
+```javascript
+import RNConfigReader from 'react-native-config-reader';
+
+RNConfigReader.;
+```
+
 
 ### Manual installation
 
@@ -35,7 +46,7 @@
   	```
 
 #### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
+[Read it!](https://github.com/ReactWindows/react-native)
 
 1. In Visual Studio add the `RNConfigReader.sln` in `node_modules/react-native-config-reader/windows/RNConfigReader.sln` folder to their solution, reference from their app.
 2. Open up your `MainPage.cs` app
@@ -43,11 +54,7 @@
   - Add `new RNConfigReaderPackage()` to the `List<IReactPackage>` returned by the `Packages` method
 
 
-## Usage
-```javascript
-import RNConfigReader from 'react-native-config-reader';
+## License
+MIT © Chanaka Athurugiriya 2019
 
-// TODO: What to do with the module?
-RNConfigReader;
-```
   
