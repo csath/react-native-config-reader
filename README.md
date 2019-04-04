@@ -1,7 +1,6 @@
-
 # 🛠 react-native-config-reader
 
-react-native-config-reader is a native library which make it easy to access all the native code's build configurations from JS.
+A native library to access all the native code's build configurations from JS.
 
 ## Installation
 
@@ -16,11 +15,68 @@ See [manual installation](#manual-installation) below if you have issues with `r
 ```javascript
 import RNConfigReader from 'react-native-config-reader';
 
-RNConfigReader.;
+// access any of the defined config variables in andoird build gradle or ios info.plist
+const configValue = RNConfigReader.ANY_DEFINED_CONFIG_FIELD;
+
+
 ```
 
+### More examples
 
-### Manual installation
+Create new build config field inside android `build.gradle` file **(android/app/build.gradle)**
+
+```gradle
+android {
+
+    defaultConfig {
+        applicationId "com.react-native.react-native-config-reader"
+        versionCode 1
+        versionName "1.0"
+        
+        buildConfigField "String", "TEST_CONFIG_FIELD", "Hello I'm your test config value"
+    }
+}
+
+```
+Create new field inside ios `info.plist` file
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+<dict>
+  <key>CFBundleDisplayName</key>
+	<string>com.react-native.react-native-config-reader</string>
+  
+	<key>TEST_CONFIG_FIELD</key>
+	<string>"Hello I'm your test config value"</string>
+</dict>
+</plist>
+
+
+```
+
+Now you can acess them inside the JS code
+
+```javascript
+import { Platform } from 'react-native';
+import RNConfigReader from 'react-native-config-reader';
+
+if(Platform.OS === 'ios') {
+  const iosBundleDisplayName = RNConfigReader.CFBundleDisplayName;
+  const testConfigValue = RNConfigReader.TEST_CONFIG_FIELD;
+}
+
+if(Platform.OS === 'android') {
+  const androidApplicationID = RNConfigReader.applicationId;
+  const testConfigValue = RNConfigReader.TEST_CONFIG_FIELD;
+}
+
+
+```
+
+## Manual installation
 
 
 #### iOS
