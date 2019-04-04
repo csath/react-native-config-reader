@@ -1,6 +1,7 @@
 
 package com.reactlibrary;
 
+import java.lang.reflect.*;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -18,5 +19,26 @@ public class RNConfigReaderModule extends ReactContextBaseJavaModule {
   @Override
   public String getName() {
     return "RNConfigReader";
+  }
+
+  @Override
+  public Map<String, Object> getConstants() {
+      final Map<String, Object> constants = new HashMap<>();
+      Field[] fields = BuildConfig.class.getDeclaredFields();
+      for (Field f : fields) {
+          if (Modifier.isStatic(f.getModifiers())) {
+              Object value = null;
+              try{
+                  value = f.get(null);
+              }
+              catch(Exception e){
+
+              }
+              finally {
+                  constants.put(f.getName(), value);
+              }
+          } 
+      }
+      return constants;
   }
 }

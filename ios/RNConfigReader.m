@@ -9,5 +9,10 @@
 }
 RCT_EXPORT_MODULE()
 
+- (NSDictionary *)constantsToExport
+{
+  return @{ @"BuildConfigs": [[NSBundle mainBundle] infoDictionary] };
+}
+
 @end
   

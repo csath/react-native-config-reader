@@ -29,5 +29,19 @@ namespace Config.Reader.RNConfigReader
                 return "RNConfigReader";
             }
         }
+
+        [Obsolete]
+        public override IReadOnlyDictionary<string, object> Constants
+        {
+            get
+            {
+                var constants = new Dictionary<string, object>
+                {
+                    { "BuildConfigs", Package.Current.localSettings }
+                };
+
+                return constants;
+            }
+        }
     }
 }
