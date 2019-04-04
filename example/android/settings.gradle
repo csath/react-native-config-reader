@@ -1,0 +1,5 @@
+rootProject.name = 'testConfig'
+include ':react-native-config-reader'
+project(':react-native-config-reader').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-config-reader/android')
+
+include ':app'
