@@ -46,7 +46,7 @@ Create new field inside ios `info.plist` file
 
 <plist version="1.0"> 
 <dict>
-  <key>CFBundleDisplayName</key>
+  	<key>CFBundleDisplayName</key>
 	<string>com.react-native.react-native-config-reader</string>
   
 	<key>TEST_CONFIG_FIELD</key>
