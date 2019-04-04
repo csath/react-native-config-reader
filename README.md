@@ -1,4 +1,4 @@
-# 🛠 react-native-config-reader
+# 🛠 react-native-config-reader [![npm](https://img.shields.io/npm/v/react-native-config-reader.svg)](https://npmjs.com/package/react-native-config-reader)  [![npm](https://img.shields.io/npm/dm/react-native-config-reader.svg)](https://npmjs.com/package/react-native-config-reader)
 
 A native library to access all the native code's build configurations from JS.
 
@@ -44,7 +44,7 @@ Create new field inside ios `info.plist` file
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 
-<plist version="1.0">
+<plist version="1.0"> 
 <dict>
   <key>CFBundleDisplayName</key>
 	<string>com.react-native.react-native-config-reader</string>
