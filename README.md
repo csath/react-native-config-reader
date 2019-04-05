@@ -101,7 +101,7 @@ if(Platform.OS === 'android') {
       compile project(':react-native-config-reader')
   	```
 
-#### Windows
+#### Windows (Beta)
 [Read it!](https://github.com/ReactWindows/react-native)
 
 1. In Visual Studio add the `RNConfigReader.sln` in `node_modules/react-native-config-reader/windows/RNConfigReader.sln` folder to their solution, reference from their app.
