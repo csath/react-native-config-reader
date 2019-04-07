@@ -7,12 +7,24 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "android",
+    "ios",
+    "config-reader"
   ],
   "author": "csath - chanakaathurugiriya@gmail.com",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csath/react-native-config-reader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/csath/react-native-config-reader/issues"
+  },
+  "homepage": "https://github.com/csath/react-native-config-reader#readme"
+}
 }
