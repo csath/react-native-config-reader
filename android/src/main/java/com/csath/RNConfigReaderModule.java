@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.csath;
 
 import java.lang.reflect.*;
 import com.facebook.react.bridge.ReactApplicationContext;
