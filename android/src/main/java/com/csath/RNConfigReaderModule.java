@@ -15,10 +15,12 @@ import java.util.HashMap;
 public class RNConfigReaderModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
+  private final Class buildConfigClass;
 
-  public RNConfigReaderModule(ReactApplicationContext reactContext) {
+  public RNConfigReaderModule(ReactApplicationContext reactContext, Class buildConfigClass) {
     super(reactContext);
     this.reactContext = reactContext;
+    this.buildConfigClass = buildConfigClass;
   }
 
   @Override
@@ -29,7 +31,7 @@ public class RNConfigReaderModule extends ReactContextBaseJavaModule {
   @Override
   public Map<String, Object> getConstants() {
       final Map<String, Object> constants = new HashMap<>();
-      Field[] fields = BuildConfig.class.getDeclaredFields();
+      Field[] fields = this.buildConfigClass.getDeclaredFields();
       for (Field f : fields) {
           if (Modifier.isStatic(f.getModifiers())) {
               Object value = null;
