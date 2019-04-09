@@ -36,9 +36,9 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* testConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* testConfigTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		43F34379FB754522A63B49BE /* libRNConfigReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EFB122B4F34CB4AADF0EFD /* libRNConfigReader.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		B043CBDB46E644ECB6E04D00 /* libRNConfigReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7F95F9A6D44EFA89E1C25F /* libRNConfigReader.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -296,9 +296,9 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
-		70E944C822565726001E94C9 /* PBXContainerItemProxy */ = {
+		70EBE38E225C9FCF0005DE55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE3FDBC11A734D21831910B0 /* RNConfigReader.xcodeproj */;
+			containerPortal = 0D6F0F730C4E4874BBE23042 /* RNConfigReader.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNConfigReader;
@@ -336,6 +336,7 @@
 		00E356EE1AD99517003FC87E /* testConfigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testConfigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* testConfigTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testConfigTests.m; sourceTree = "<group>"; };
+		0D6F0F730C4E4874BBE23042 /* RNConfigReader.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNConfigReader.xcodeproj; path = "../node_modules/react-native-config-reader/ios/RNConfigReader.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* testConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -351,12 +352,11 @@
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
-		78EFB122B4F34CB4AADF0EFD /* libRNConfigReader.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNConfigReader.a; sourceTree = "<group>"; };
+		7C7F95F9A6D44EFA89E1C25F /* libRNConfigReader.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNConfigReader.a; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EE3FDBC11A734D21831910B0 /* RNConfigReader.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNConfigReader.xcodeproj; path = "../node_modules/react-native-config-reader/ios/RNConfigReader.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,7 +385,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				43F34379FB754522A63B49BE /* libRNConfigReader.a in Frameworks */,
+				B043CBDB46E644ECB6E04D00 /* libRNConfigReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,15 +554,15 @@
 		70E9445522565346001E94C9 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				78EFB122B4F34CB4AADF0EFD /* libRNConfigReader.a */,
+				7C7F95F9A6D44EFA89E1C25F /* libRNConfigReader.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		70E944C522565725001E94C9 /* Products */ = {
+		70EBE38B225C9FCF0005DE55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70E944C922565726001E94C9 /* libRNConfigReader.a */,
+				70EBE38F225C9FCF0005DE55 /* libRNConfigReader.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -591,7 +591,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				EE3FDBC11A734D21831910B0 /* RNConfigReader.xcodeproj */,
+				0D6F0F730C4E4874BBE23042 /* RNConfigReader.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -800,8 +800,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 70E944C522565725001E94C9 /* Products */;
-					ProjectRef = EE3FDBC11A734D21831910B0 /* RNConfigReader.xcodeproj */;
+					ProductGroup = 70EBE38B225C9FCF0005DE55 /* Products */;
+					ProjectRef = 0D6F0F730C4E4874BBE23042 /* RNConfigReader.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1053,11 +1053,11 @@
 			remoteRef = 70E9448122565354001E94C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		70E944C922565726001E94C9 /* libRNConfigReader.a */ = {
+		70EBE38F225C9FCF0005DE55 /* libRNConfigReader.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNConfigReader.a;
-			remoteRef = 70E944C822565726001E94C9 /* PBXContainerItemProxy */;
+			remoteRef = 70EBE38E225C9FCF0005DE55 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -1222,6 +1222,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = testConfigTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1248,6 +1249,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = testConfigTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1275,6 +1277,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = testConfig/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1297,6 +1300,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = testConfig/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1326,6 +1330,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = "testConfig-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1360,6 +1365,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = "testConfig-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1393,6 +1399,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = "testConfig-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1426,6 +1433,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-config-reader/ios",
+					"$(SRCROOT)/../node_modules/react-native-config-reader/ios/**",
 				);
 				INFOPLIST_FILE = "testConfig-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

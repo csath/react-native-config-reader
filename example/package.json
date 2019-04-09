@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.3",
-    "react-native-config-reader": "^1.0.2"
+    "react-native-config-reader": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

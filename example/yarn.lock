@@ -4903,10 +4903,10 @@ react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
-react-native-config-reader@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-config-reader/-/react-native-config-reader-1.0.2.tgz#aa68c1445e8722b08e6671a1636f26e8678e449d"
-  integrity sha512-XRz94j3g5TA3MIpU4+FH7V0gVARRIyf/WTOYkUsx1Vb8QjE06QN5/kWBqs4eYM4cb8KtY71hW9mvwN+6k0Fr8A==
+react-native-config-reader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-config-reader/-/react-native-config-reader-2.0.0.tgz#bbb7d00cf048d43f74629e1e21e5ba4f65fbcf31"
+  integrity sha512-U2ZFjJDnHHLzEJRIgezAmKtJEXuKkZF/2Zaf67977W/ZNrTPyDlcVaKCSA9IjGtyq0JSIUelBooSiK+Q7HCr/w==
 
 react-native@0.59.3:
   version "0.59.3"
