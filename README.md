@@ -8,6 +8,13 @@ A native library to access all the native code's build configurations from JS.
 
 2. `$ react-native link react-native-config-reader`
 
+3. Go to **android/app/src/main/packageName/MainApplication.java** and find line
+
+   `new RNConfigReaderPackage()`
+
+      and replace it with
+
+   `new RNConfigReaderPackage(BuildConfig.class)`
 
 See [manual installation](#manual-installation) below if you have issues with `react-native link`.
 
