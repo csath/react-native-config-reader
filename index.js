@@ -1,4 +1,3 @@
-
 import { NativeModules, Platform } from 'react-native';
 
 const { RNConfigReader } = NativeModules;

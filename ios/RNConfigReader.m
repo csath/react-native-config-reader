@@ -14,5 +14,9 @@ RCT_EXPORT_MODULE()
   return @{ @"BuildConfigs": [[NSBundle mainBundle] infoDictionary] };
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 @end
-  
