@@ -12,14 +12,9 @@ import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
 public class RNConfigReaderPackage implements ReactPackage {
-    private final Class buildConfigclass;
-
-    public RNConfigReaderPackage(Class buildConfigclass) {
-        this.buildConfigclass = buildConfigclass;
-    }
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNConfigReaderModule(reactContext, this.buildConfigclass));
+      return Arrays.<NativeModule>asList(new RNConfigReaderModule(reactContext));
     }
 
     // Deprecated from RN 0.47
