@@ -34,7 +34,7 @@ public class RNConfigReaderModule extends ReactContextBaseJavaModule {
       final Map<String, Object> constants = new HashMap<>();
       try {
         Context context = getReactApplicationContext();
-        int resId = context.getResources().getIdentifier("build_config_package", "string", context.getPackageName());
+        int resId = context.getResources().getIdentifier("rn_config_reader_custom_package", "string", context.getPackageName());
         String className;
         try {
           className = context.getString(resId);
