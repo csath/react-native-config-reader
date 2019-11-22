@@ -1,6 +1,6 @@
 {
   "name": "react-native-config-reader",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Simply access android build configs and ios info.plist values in JS",
   "main": "index.js",
   "scripts": {
