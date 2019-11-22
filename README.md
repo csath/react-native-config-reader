@@ -2,6 +2,11 @@
 
 A native library to access all the native code's build configurations from JS.
 
+
+For **react-native@0.60+** versions use **react-native-config-reader@4.0+**
+(Autolinking support enabled now)
+
+
 ## Installation
 
 1. `$ npm install react-native-config-reader --save` or  `$ yarn add react-native-config-reader`
