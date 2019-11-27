@@ -9,6 +9,10 @@ For **react-native@0.60+** versions use **react-native-config-reader@4.0+**
 
 ## Installation
 
+For **rn 0.60+ Auto Linking** will do things for you.
+
+If not follow these: 
+
 1. `$ npm install react-native-config-reader --save` or  `$ yarn add react-native-config-reader`
 
 2. `$ react-native link react-native-config-reader`
@@ -16,10 +20,6 @@ For **react-native@0.60+** versions use **react-native-config-reader@4.0+**
 3. Go to **android/app/src/main/packageName/MainApplication.java** and find line
 
    `new RNConfigReaderPackage()`
-
-      and replace it with
-
-   `new RNConfigReaderPackage(BuildConfig.class)`
 
 See [manual installation](#manual-installation) below if you have issues with `react-native link`.
 
