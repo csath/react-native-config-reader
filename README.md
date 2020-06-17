@@ -100,7 +100,7 @@ if(Platform.OS === 'android') {
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.reactlibrary.RNConfigReaderPackage;` to the imports at the top of the file
   - Add `new RNConfigReaderPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
@@ -112,6 +112,27 @@ if(Platform.OS === 'android') {
   	```
       compile project(':react-native-config-reader')
   	```
+
+##### Android advanced configurations with Multiple environments
+
+If your app uses an `applicationIdSuffix` or a different `applicationId` depending on the build variants, you must append the following line inside the `buildTypes` block in your `android/app/build.gradle` file and specify your new package name.
+
+```
+  resValue "string", "rn_config_reader_custom_package", "com.yourNewPackage"
+```
+
+Example
+
+```
+buildTypes {
+  ...
+  debug {
+    ...
+    applicationIdSuffix ".dev"
+    resValue "string", "rn_config_reader_custom_package", "com.yourNewPackage"
+  }
+}
+```
 
 #### Windows (Beta)
 [Read it!](https://github.com/ReactWindows/react-native)
