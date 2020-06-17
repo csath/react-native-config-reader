@@ -113,12 +113,12 @@ if(Platform.OS === 'android') {
       compile project(':react-native-config-reader')
   	```
 
-#### Android and Multiple environments
+##### Android advanced configurations with Multiple environments
 
-If your app uses an `applicationIdSuffix` or a different `applicationId` depending on the on build variants you must append the following line inside the `buildTypes` block in your `android/app/build.gradle` file 
+If your app uses an `applicationIdSuffix` or a different `applicationId` depending on the build variants, you must append the following line inside the `buildTypes` block in your `android/app/build.gradle` file and specify your new package name.
 
 ```
-  resValue "string", "rn_config_reader_custom_package", "com.yourpackage"
+  resValue "string", "rn_config_reader_custom_package", "com.yourNewPackage"
 ```
 
 Example
@@ -129,7 +129,7 @@ buildTypes {
   debug {
     ...
     applicationIdSuffix ".dev"
-    resValue "string", "rn_config_reader_custom_package", "com.yourpackage"
+    resValue "string", "rn_config_reader_custom_package", "com.yourNewPackage"
   }
 }
 ```
