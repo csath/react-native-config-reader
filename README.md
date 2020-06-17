@@ -142,6 +142,20 @@ buildTypes {
   - Add `using Config.Reader.RNConfigReader;` to the usings at the top of the file
   - Add `new RNConfigReaderPackage()` to the `List<IReactPackage>` returned by the `Packages` method
 
+## Troubleshooting
+
+### Problems with Proguard
+
+When Proguard is enabled (which it is by default for Android release builds), it can rename the BuildConfig Java class in the minification process and prevent `react-native-config-reader` from referencing it. To avoid this, add an exception to android/app/proguard-rules.pro:
+
+`-keep class com.yourNewPackage.BuildConfig { *; }`
+
+com.yourNewPackage should match the package value in your app/src/main/AndroidManifest.xml file.
+
+If using Dexguard, the shrinking phase will remove resources it thinks are unused. It is necessary to add an exception to preserve the build config package name.
+
+`-keepresources string/rn_config_reader_custom_package`
+
 
 ## License
 MIT License
