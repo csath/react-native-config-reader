@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author       = { "author" => "author@domain.cn" }
-  s.platform     = :ios, "7.0"
+  s.platforms    = { :ios => "7.0", :tvos => "9.2" }
   s.source       = { :git => "https://github.com/author/RNConfigReader.git", :tag => "master" }
   s.source_files = 'ios/**/*'
   s.requires_arc = true
