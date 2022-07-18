@@ -1,5 +1,5 @@
 #if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
+#import "React/RCTBridge.h"
 #else
 #import <React/RCTBridgeModule.h>
 #endif
