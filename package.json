@@ -1,7 +1,7 @@
 {
   "name": "react-native-config-reader",
   "version": "5.0.0",
-  "description": "Simply access android build configs and ios info.plist values in JS",
+  "description": "Simply access Android build configs and iOS info.plist values in JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
