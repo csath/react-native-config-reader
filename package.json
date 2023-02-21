@@ -1,7 +1,7 @@
 {
   "name": "react-native-config-reader",
-  "version": "4.2.0",
-  "description": "Simply access android build configs and ios info.plist values in JS",
+  "version": "5.0.0",
+  "description": "Simply access Android build configs and iOS info.plist values in JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,16 @@
     "ios",
     "config-reader"
   ],
-  "author": "csath - chanakaathurugiriya@gmail.com",
+  "author": {
+    "name": "Chanaka Athurugiriya",
+    "email": "chanakaathurugiriya@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "John Lianoglou",
+      "email": "prometheas+react-native-config-reader@gmail.com"
+    }
+  ],
   "license": "MIT",
   "peerDependencies": {
     "react-native": ">= 0.60"
